@@ -1,7 +1,8 @@
 FROM debian:jessie
 
 RUN apt-get update 
-RUN apt-get -y install git vim wget build-essential python
+RUN apt-get -y install git vim wget build-essential python python-pip
+RUN pip install esptool
 RUN mkdir /hdd2
 RUN cd /hdd2 && \ 
     wget ftp://ftp.acsoftware.pl/SUPLA/Espressif_x64-docker.tgz && \
