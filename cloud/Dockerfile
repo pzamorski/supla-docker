@@ -1,4 +1,4 @@
-FROM php:7.0.33-apache AS supla_cloud_base
+FROM php:7.1.32-apache AS supla_cloud_base
 
 WORKDIR /var/www
 
@@ -11,7 +11,7 @@ RUN apt-get update \
       libcurl4-gnutls-dev \
       git \
       unzip \
-      mysql-client \
+      mariadb-client \
       wget \
       supervisor \
       cron \
