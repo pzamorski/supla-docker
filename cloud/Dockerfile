@@ -1,10 +1,11 @@
-FROM php:7.1.32-apache AS supla_cloud_base
+FROM php:7.3.13-apache AS supla_cloud_base
 
 WORKDIR /var/www
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
       libicu-dev \
+      libzip-dev \
       libpq-dev \
       ca-certificates \
       ssl-cert \
