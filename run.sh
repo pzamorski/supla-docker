@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e
 
 PROJ=~/CProjects
 [ -e $PROJ ] || mkdir -p $PROJ
