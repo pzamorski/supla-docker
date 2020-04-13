@@ -1,7 +1,7 @@
-FROM debian:jessie
+FROM debian:buster
 
 RUN apt-get update 
-RUN apt-get -y install git vim wget build-essential libssl-dev libmysqlclient-dev valgrind cppcheck clang-format-4.0 python-pip
+RUN apt-get -y install git vim wget build-essential libssl-dev libmariadbclient-dev valgrind cppcheck clang-format-6.0 python-pip
 RUN pip install cpplint  
 RUN mkdir -p /etc/supla-server
 
