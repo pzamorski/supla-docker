@@ -20,5 +20,5 @@ docker run -v "$DATADIR":/var/lib/mysql --rm --network supla-core-devel-net --ip
 
 cd "$PROJ"
 [ ! -e ./supla-core ] && git clone https://github.com/SUPLA/supla-core
-docker run -v "$PROJ":/CProjects --network supla-core-devel-net\
+docker run -p 2015:2015/tcp -p 2016:2016/tcp -v "$PROJ":/CProjects --network supla-core-devel-net\
  --add-host=db:192.168.111.2 --ip 192.168.111.20 -it devel/supla-core /bin/bash
