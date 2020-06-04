@@ -1,4 +1,4 @@
-FROM debian:10.3
+FROM debian:10.4
 
 RUN apt-get update 
 RUN apt-get upgrade -y
