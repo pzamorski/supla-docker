@@ -30,7 +30,7 @@ Your home connected. With Docker. www.supla.org
      ```
 1. Clone this repository.
    ```
-   git clone https://github.com/SUPLA/supla-docker.git
+   git clone https://github.com/pzamorski/supla-docker.git
    ```
 1. Generate sample config by running
    ```
