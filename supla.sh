@@ -33,7 +33,7 @@ source .env >/dev/null 2>&1
 CONTAINER_NAME="$(echo -e "${COMPOSE_PROJECT_NAME}" | sed -e 's/\r$//')"
 
 if [ "$1" = "start" ]; then
-  echo -e "${GREEN}Starting SUPLA containers${NC}" && \
+  echo -e "${YELLOW}Starting SUPLA containers${NC}" && \
   docker-compose up --build -d && \
   echo -e "${GREEN}SUPLA containers has been started.${NC}"
 
